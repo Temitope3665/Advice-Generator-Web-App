@@ -1,13 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Ubuntu', sans-serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  padding: 0;
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper {
+  background-color: #212632;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.content-box {
+  position: absolute;
+  right: 30%;
+  justify-content: center;
+  width: 28%;
+  background-color: #303A49;
+  border-radius: 15px;
+  padding: 0 60px;
+  top: 30%;
+}
+
+.advice-no{
+  color: #53FFAB;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 40px;
+}
+
+.advice-text {
+  color: #CEE2E9;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 500;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.loading {
+  padding: 20px;
+}
+
+.divider {
+  width: 100%;
+  margin: 0 0 25px;
+}
+
+.dice-wrapper {
+  background-color: #53FFAB;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  cursor: pointer;
+  margin: 10px auto -25px auto;
+}
+
+.dice-wrapper img {
+  position: absolute;
+  right: 30%;
+  bottom: 30%;
+}
+
+.dice-wrapper:hover {
+  box-shadow: rgba(83,255,171) 1px 1px 25px 2px;
+}
+
+.dice-wrapper:active {
+  box-shadow: rgba(83,255,171) 1px 1px 25px 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-box {
+    position: absolute;
+    right: 5%;
+    width: 90%;
+    background-color: #303A49;
+    border-radius: 15px;
+    top: 33%;
+    padding: 0;
+  }
+
+  .advice-text {
+    color: #CEE2E9;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 500;
+    margin: 25px 20px;
+  }
 }
